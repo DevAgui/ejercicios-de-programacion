@@ -17,6 +17,6 @@ public class Ejercicio05Tema03 {
   
   double bxh = base * altura;
   
-  System.out.printf("El área de un rectángulo con b=%3.2f y h=%3.2f es igual a = %3.2f cm²", base, altura, bxh);  
+  System.out.printf("El área de un rectángulo con b=%3.2f cm y h=%3.2f cm es igual a = %3.2f cm²", base, altura, bxh);  
   }
 }
