@@ -3,7 +3,7 @@
  *Éste ejercicio nos pide crear un conversor de euros a pesetas. 
  * @author Diego Aguilera Martín
  */
-public class Ejercicio04Tema02 {
+public class Ejercicio03Tema02 {
   public static void main(String[] args) {
     
   double euros = 500d;
