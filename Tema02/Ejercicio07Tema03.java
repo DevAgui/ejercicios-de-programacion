@@ -3,7 +3,7 @@
  *Éste ejercicio nos pide crear un programa que calcule una factura a partir de la base imponible a través de los datos obtenidos por pantalla. 
  *@author Diego Aguilera Martín
  */
-public class Ejercicio06Tema02 {
+public class Ejercicio07Tema03 {
   public static void main(String[] args) {
     
   System.out.println("Por favor, introduce la base imponible a aplicar el 21% de IVA: ");
