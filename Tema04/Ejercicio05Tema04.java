@@ -10,15 +10,21 @@ public class Ejercicio05Tema04 {
     System.out.println("");
     System.out.println("Por favor, introduce a: ");
     double a = Double.parseDouble(System.console().readLine()); 
-     
     System.out.println("");
+    
     System.out.println("Por favor, introduce b: ");
     double b = Double.parseDouble(System.console().readLine());
     
-    System.out.println("");
-    double resolucionEcuacion = - b / a;
-    System.out.printf("x = %.3f", resolucionEcuacion );
-  
+    if((b == 0) || (a == 0)){
+      System.out.println("La ecuación no tiene solución real.");
+      System.out.println("");
+      } else {
+          System.out.println("");
+          double resolucionEcuacion = - b / a;
+          System.out.printf("x = %.3f", resolucionEcuacion );
+        }
+    
+
         }
     
     
