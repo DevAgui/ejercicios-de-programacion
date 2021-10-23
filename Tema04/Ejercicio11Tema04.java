@@ -1,39 +1,28 @@
 /**
- * Ejercicio 13 Tema 4.
- * Éste ejercicio nos pide realizar un programa que ordene los números que se introduzcan por pantalla. 
+ * Ejercicio 11 Tema 4.
+ * Éste ejercicio nos pide realizar un programa que te diga en segundos lo que queda para la medianoche . 
  * @author Diego Aguilera Martín
  */
-public class Ejercicio13Tema04 {
+public class Ejercicio11Tema04 {
   public static void main(String[] args) {
-    
-    System.out.println("Éste programa te ordena los números enteros que introduzcas de mayor a menor.");
-    System.out.println("");
-    System.out.println("Por favor, introduce el primer número entero: ");
-    int x = Integer.parseInt(System.console().readLine()); 
-    System.out.println("");
-    System.out.println("Por favor, introduce el segundo número entero: ");
-    int y = Integer.parseInt(System.console().readLine());
-     System.out.println("");
-    System.out.println("Por favor, introduce el tercer número entero: ");
-    int z = Integer.parseInt(System.console().readLine());
-    
-    if((x > y) && (x > z) && (y > z)){
-      System.out.println(x + y + z);
-      } else if((x > y) && (x > z) && (z > y)){
-          System.out.println(x + z + y);
-        } else if((y > x) && (y > z) && (x > z)){
-            System.out.println(y + x + z);
-          } else if((y > x) && (y > z) && (z > x)){
-              System.out.println(y + z + x);
-            } else if((z > x) && (z > y) && (x > y)){
-                System.out.println(z + x + y);
-              } else if((z > x) && (z > y) && (y > x)){
-                  System.out.println(z + y + x);
-                }
 
-        }
-        
-    
-    
+    System.out.println("¿Quieres saber lo que queda para medianoche?");
+    System.out.println("");
+    System.out.println("Por favor, dime la hora que es en dígitos: ");
+    int hora = Integer.parseInt(System.console().readLine()); 
+    System.out.println("");
+    System.out.println("Por favor, dime los minutos que son en dos dígitos: ");
+    int minutos = Integer.parseInt(System.console().readLine());
+
+
+    int mediaNoche = 86400;
+    int pasoHorasAsegundos = hora * 3600;
+    int pasoMinutosAsegundos = minutos * 60;
+    int sumaEnSegundos = pasoHorasAsegundos + pasoMinutosAsegundos;
+    int quedaHastaMediaNoche = mediaNoche - sumaEnSegundos;
+
+    System.out.println("");
+    System.out.printf("Para medianoche todavía quedan %d segundos.", quedaHastaMediaNoche);
   }
 
+}
