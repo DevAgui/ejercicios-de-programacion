@@ -12,10 +12,14 @@ public class Ejercicio06Tema04 {
     double h = Double.parseDouble(System.console().readLine()); 
     System.out.println("");
     
-    double hCuadrado = 2 * h;
-    double calculoFormulaCaidaObjeto = hCuadrado / 9.81;
-    double raizCuadradaFormula = Math.sqrt(calculoFormulaCaidaObjeto);
-    System.out.printf("Tu objeto tardaría en caer %.5f m/s.", raizCuadradaFormula);
+    if(h <= 0){
+      System.out.println("Con estos datos no hay solución.");
+      }else{
+         double hCuadrado = 2 * h;
+         double calculoFormulaCaidaObjeto = hCuadrado / 9.81;
+         double raizCuadradaFormula = Math.sqrt(calculoFormulaCaidaObjeto);
+         System.out.printf("Tu objeto tardaría en caer %.5f m/s.", raizCuadradaFormula);
+    }
     
         }
         

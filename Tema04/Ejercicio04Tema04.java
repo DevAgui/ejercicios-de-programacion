@@ -17,11 +17,11 @@ public class Ejercicio04Tema04 {
       System.out.println(calcHoras + " euros.");
       } else {
           double restaHorasExtras = totalHoras - 40;
-          double calcHorasExtrasUno = restaHorasExtras * 16;
-          double calcHorasExtras = 480.0 + calcHorasExtrasUno;
+          double calcHorasExtras = restaHorasExtras * 16;
+          double calcHorasExtrasSuma = 480.0 + calcHorasExtras;
           System.out.printf("Esta semana has trabajado un total de %.1f horas por lo que te corresponde un salario de: \n", totalHoras);
           System.out.println("-----------------------------------------------------------------------------------------");
-          System.out.println(calcHorasExtras + " euros.");
+          System.out.println(calcHorasExtrasSuma + " euros.");
         }
     
     

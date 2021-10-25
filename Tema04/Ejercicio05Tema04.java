@@ -15,7 +15,7 @@ public class Ejercicio05Tema04 {
     System.out.println("Por favor, introduce b: ");
     double b = Double.parseDouble(System.console().readLine());
     
-    if((b == 0) || (a == 0)){
+    if((b == 0) && (a == 0)){
       System.out.println("La ecuación no tiene solución real.");
       System.out.println("");
       } else {

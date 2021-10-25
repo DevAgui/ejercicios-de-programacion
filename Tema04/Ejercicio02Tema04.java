@@ -20,7 +20,7 @@ public class Ejercicio02Tema04 {
           System.out.println("¡Buenos tardes!");
         } else if((hora >= 21) && (hora <= 24)){
             System.out.println("¡Buenos noches!");
-          } else if((hora >= 1) && (hora <= 5)){
+          } else if((hora >= 0) && (hora <= 5)){
             System.out.println("¡Buenos noches!");
             } else{
               

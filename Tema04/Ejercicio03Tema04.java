@@ -6,7 +6,7 @@
 public class Ejercicio03Tema04 {
   public static void main(String[] args) {
     
-    System.out.println("Éste programa te dará el día de la semana si introduces por teclado el número");
+    System.out.println("Éste programa te dará el día de la semana si introduces por teclado el número.");
     System.out.println("");
     System.out.println("Introduce el día en un número entero: ");
     

@@ -36,7 +36,7 @@ public class Ejercicio08Tema04 {
             System.out.println("Notable. ¡Enhorabuena!.");
           } else if ((notaMedia >= 9.00) && (notaMedia <= 10.00)){
             System.out.println("");
-            System.out.println("¡Sobresaliente!. ¡Te vas de Erasmus a Catellón!.");
+            System.out.println("¡Sobresaliente!. ¡Te vas de Erasmus a Castellón!.");
           } else{
             
             
