@@ -10,7 +10,7 @@ public class Ejercicio01Tema04 {
     System.out.println("");
     
     System.out.println("Por favor, introduce un día de la semana, de lunes a viernes en minúsculas para saber qué asignatura tienes a primera hora: ");
-    String diaSemana = (System.console().readLine().toLowerCase);
+    String diaSemana = (System.console().readLine().toLowerCase());
     System.out.println("");
     
     if(diaSemana.equals("lunes")){
