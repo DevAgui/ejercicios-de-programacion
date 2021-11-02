@@ -10,7 +10,8 @@ public class Ejercicio19Tema04 {
     System.out.println("");
     System.out.println("Por favor, introduzca la cifra: ");
     int numero = Integer.parseInt(System.console().readLine());
-
+    System.out.println("");
+    
     if((numero <= 99999) && (numero >= 10000)){
       System.out.println("Tu número tiene 5 cifras.");
       } else if((numero <= 9999) && (numero >= 1000)){

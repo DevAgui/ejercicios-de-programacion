@@ -11,7 +11,7 @@ public class Ejercicio17Tema04 {
     System.out.println("Por favor, introduzca la cifra: ");
     int numero = Integer.parseInt(System.console().readLine());
 
-   int divisor10 = numero % 10;
+    int divisor10 = numero % 10;
     System.out.println("Tu número es " + divisor10);
     }
 }

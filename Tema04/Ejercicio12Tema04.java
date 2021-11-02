@@ -19,7 +19,7 @@ public class Ejercicio12Tema04 {
     System.out.println("");
     System.out.println("¿La PK de una entidad puede ser FK en otra entidad?");
     int respuesta1 = Integer.parseInt(System.console().readLine());
-    if((respuesta1 == 1) && (primeraPregunta == true)){
+    if((respuesta1 == 1) && (primeraPregunta)){
       nota++;
       } else{
           nota--;
@@ -30,7 +30,7 @@ public class Ejercicio12Tema04 {
     System.out.println("");
     System.out.println("El lifecycle tipo waterfall es el más utilizado en la actualidad.");
     int respuesta2 = Integer.parseInt(System.console().readLine());
-    if((respuesta2 == 2) && (restoPreguntas == true)){
+    if((respuesta2 == 2) && (restoPreguntas)){
       nota++;
       } else{
           nota--;
@@ -41,7 +41,7 @@ public class Ejercicio12Tema04 {
     System.out.println("");
     System.out.println("El formato de tamaño BTX es el más extendido comercialmente.");
     int respuesta3 = Integer.parseInt(System.console().readLine());
-    if((respuesta3 == 2) && (restoPreguntas == true)){
+    if((respuesta3 == 2) && (restoPreguntas)){
       nota++;
       } else{
           nota--;
@@ -52,7 +52,7 @@ public class Ejercicio12Tema04 {
     System.out.println("");
     System.out.println("El atributo margin-left modifica el espacio interior de una caja.");
     int respuesta4 = Integer.parseInt(System.console().readLine());
-    if((respuesta4 == 2) && (restoPreguntas == true)){
+    if((respuesta4 == 2) && (restoPreguntas)){
       nota++;
       } else{
           nota--;
@@ -63,7 +63,7 @@ public class Ejercicio12Tema04 {
     System.out.println("");
     System.out.println("La OMS entiende la salud sólo como el bienestar físico.");
     int respuesta5 = Integer.parseInt(System.console().readLine());
-    if((respuesta5 == 2) && (restoPreguntas == true)){
+    if((respuesta5 == 2) && (restoPreguntas)){
       nota++;
       } else{
           nota--;
@@ -74,7 +74,7 @@ public class Ejercicio12Tema04 {
     System.out.println("");
     System.out.println("Notion es una herramienta de creación de Software.");
     int respuesta6 = Integer.parseInt(System.console().readLine());
-    if((respuesta6 == 2) && (restoPreguntas == true)){
+    if((respuesta6 == 2) && (restoPreguntas)){
       nota++;
       } else{
           nota--;
@@ -85,7 +85,7 @@ public class Ejercicio12Tema04 {
     System.out.println("");
     System.out.println("El componente más importante de una computadora es la tarjeta gráfica.");
     int respuesta7 = Integer.parseInt(System.console().readLine());
-    if((respuesta7 == 2) && (restoPreguntas == true)){
+    if((respuesta7 == 2) && (restoPreguntas)){
       nota++;
       } else{
           nota--;
@@ -96,7 +96,7 @@ public class Ejercicio12Tema04 {
     System.out.println("");
     System.out.println("Si existe un tipo de relación 1-n, ¿estamos hablando de la cardinalidad mínima?");
     int respuesta8 = Integer.parseInt(System.console().readLine());
-    if((respuesta8 == 2) && (restoPreguntas == true)){
+    if((respuesta8 == 2) && (restoPreguntas)){
       nota++;
       } else{
           nota--;
@@ -107,7 +107,7 @@ public class Ejercicio12Tema04 {
     System.out.println("");
     System.out.println("Normalmente introducimos el CSS en nuestra etiqueta <style>.");
     int respuesta9 = Integer.parseInt(System.console().readLine());
-    if((respuesta9 == 2) && (restoPreguntas == true)){
+    if((respuesta9 == 2) && (restoPreguntas)){
       nota++;
       } else{
           nota--;
@@ -118,7 +118,7 @@ public class Ejercicio12Tema04 {
     System.out.println("");
     System.out.println("LOAD en la máquina de von Neumann era una instrucción en lenguaje JAVA.");
     int respuesta10 = Integer.parseInt(System.console().readLine());
-    if((respuesta10 == 2) && (restoPreguntas == true)){
+    if((respuesta10 == 2) && (restoPreguntas)){
       nota++;
       } else{
           nota--;
