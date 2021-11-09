@@ -7,15 +7,29 @@
  */
 public class Ejercicio07Tema05 {
   public static void main(String[] args) {
-    
-    System.out.println("Control de acceso a la caja fuerte. Por favor, introduzca el número de 4 cifras para abrirla.");
+    int oportunidades = 4;
+    int codigo = 4572;
+    int numero = 0;
+    System.out.println("Control de acceso a la caja fuerte. Recuerde que solo tiene 4 intentos y que el código es de 4 cfi.");
+    while((numero != codigo) && (oportunidades > 0)){
+    System.out.println("Introduzca el código: ");
+    numero = Integer.parseInt(System.console().readLine());
     System.out.println("");
-    
-    int x = 320;
-    do{
-    System.out.println(x);
-    System.out.println("");
-    x -= 20;
-    } while( x >= 160);
+      if((oportunidades > 0) && (numero != codigo)){
+        System.out.println("Lo siento, esa no es la combinación para abrirla.");
+        oportunidades -= 1;
+        System.out.println("Te quedan " + oportunidades + " intentos");
+        System.out.println("");
+        } else if((oportunidades == 0) && (numero != codigo)){
+          System.out.println("");
+            System.out.println("Lo siento, has agotado las oportunidades. La caja fuerte se ha cerrado.");
+          } else if(numero == codigo){
+            System.out.println("");
+            System.out.println("La caja fuerte se ha abierto satisfactoriamente.");
+    }
+    }
+ 
 }
 }
+
+
