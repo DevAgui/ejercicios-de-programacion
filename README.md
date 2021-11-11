@@ -1,31 +1,5 @@
-#Ejercicios de Programación de 1ºDAM.
+# Ejercicios de Programación de 1ºDAM.
 
-##_¡Prueba a ejecutar éste programa en tu IDE :D!_
+## Aquí voy a ir subiendo los ejercicios de Programación, puedes consultar lo que quieras.
 
-/**
-*El mar en una bonita noche, tan bonita como JAVA.
-*
-* @author DiegoAguileraMartin
-*/
-public class Ejercicio10 {
-  public static void main(String[] args) {
-    System.out.printf("%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s\n","\033[37m", "✳", "", "", "", "✳", "", "✩", "", "", "", "✳", "", "", "");
-    System.out.printf("%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s\n","", "", "", "", "⁕", "", "", "", "", "", "✳", "", "", "✳", "");
-    System.out.printf("%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s\n","", "", "⁕", "", "", "", "","◯", "", "", "", "⁕", "", "", "");
-    System.out.printf("%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s\n","", "", "", "⁕", "", "", "", "", "⁕", "", "✳", "", "", "", "");
-    System.out.printf("%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s\n","", "✳", "", "", "", "", "", "", "", "", "", "", "", "", "");
-    System.out.printf("%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s\n","", "", "", "", "", "", "", "⁕", "", "", "", "", "⁕", "", "");
-    System.out.printf("%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s\n","", "", "", "", "", "", "", "", "", "", "⁕", "", "", "", "");
-    System.out.printf("%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s\n","✳", "", "", "", "", "", "", "", "", "", "", "", "", "", "");
-    System.out.printf("%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s\n","", "", "", "", "⁕", "", "", "", "", "", "", "", "", "", "");
-    System.out.printf("%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s\n","\033[34m━", "━", "━", "━", "━", "━", "━", "━", "━", "━", "━", "━", "━", "━", "━");
-    System.out.printf("%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s\n","↜", "↜", "↜", "↜", "\033[96m↜", "\033[37m/", "/", "\033[96m↜", "\033[34m↜", "↜", "↜", "↜", "↜", "↜", "↜");
-    System.out.printf("%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s\n","↜", "↜", "↜", "\033[96m↜", "\033[37m/", "/", "\033[96m↜", "\033[34m↜", "↜", "↜", "↜", "↜", "↜", "↜", "↜");
-    System.out.printf("%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s\n","↜", "↜", "↜", "\033[96m↜", "\033[37m/", "/", "\033[96m↜", "\033[34m↜", "↜", "↜", "↜", "↜", "↜", "↜", "↜");
-    System.out.printf("%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s\n","↜", "↜", "\033[96m↜", "\033[37m/", "/", "/", "\033[96m↜", "\033[34m↜", "↜", "↜", "↜", "↜", "↜", "↜", "↜");
-    System.out.printf("%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s\n","↜", "↜", "↜", "\033[96m↜", "\033[37m/", "/", "\033[96m↜", "\033[34m↜", "↜", "↜", "↜", "↜", "↜", "↜", "↜");
-    System.out.printf("%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s\n","↜", "↜", "\033[96m↜", "\033[37m/", "/", "\033[96m↜", "\033[34m↜", "↜", "↜", "↜", "↜", "↜", "↜", "↜", "↜");
-    System.out.printf("%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s\n","↜", "\033[96m↜", "\033[37m/", "◯", "/", "\033[96m↜", "\033[34m↜", "↜", "↜", "↜", "↜", "↜", "↜", "↜", "↜");
-    System.out.printf("%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s%1s\n","↜", "\033[96m↜", "\033[37m/", "/", "/", "\033[96m↜", "\033[34m↜", "↜", "↜", "↜", "↜", "↜", "↜", "↜", "↜");
-  }
-}
+file:///home/diego/Im%C3%A1genes/Captura%20de%20pantalla%20de%202021-11-11%2018-48-34.png
