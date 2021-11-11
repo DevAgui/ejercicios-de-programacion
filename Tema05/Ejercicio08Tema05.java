@@ -10,7 +10,7 @@ public class Ejercicio08Tema05 {
     int x = Integer.parseInt(System.console().readLine());
     System.out.print("");
     int z = x * 10;
-    for (int y = x; y <= z; y += x){++
+    for (int y = x; y <= z; y += x){
     System.out.println(y);
     System.out.println("");
   }
