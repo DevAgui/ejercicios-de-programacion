@@ -1,1 +1,1 @@
-cifra++;
+      suma = suma + numeroSiguiente;
