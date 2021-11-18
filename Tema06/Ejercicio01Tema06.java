@@ -8,9 +8,12 @@ public class Ejercicio01Tema06 {
 
     public static void main(String[] args) {
 
+        // Entrada al sistema y definición de variables.
         System.out.println("¡Bienvenido! Espero que te gusten los dados. ");
         int dado = (int) (Math.random() * 6 + 1);
         int suma = 0;
+
+        // Tirada de dados.
         for (int i = 1; i <= 3; i++) {
             suma += dado;
         }
