@@ -14,33 +14,38 @@ public class Ejercicio21Tema05 {
     System.out.println();
     System.out.println();
     int numeroIteraciones = 0;
-    int sumaNumeros = 0;
     long par = 0;
-    long impar = 0;
     long numeroIteracionesImpar = 0;
+    long mediaNumerosImpar = 0;
+    long sumaNumeros = 0;
+    long impar = 0;
+    long parMayor = 0;
+
     do {
+      impar = impar;
       long divisionParOimpar = numero / 2;
-      int mediaNumerosImpar = sumaNumeros / numeroIteracionesImpar;
+      mediaNumerosImpar = mediaNumerosImpar;
       System.out.println("Por favor, introduzca el número");
       numero = Integer.parseInt(System.console().readLine());
-      if (numero >= 0) {
-        numeroIteraciones++;
-      }
+
+      numeroIteraciones++;
+
       if (divisionParOimpar == 0) {
         par = numero;
       }
-      if(par > par){
-      long parMayor = par;
-      
-      }
-      if(divisionParOimpar != 0){
+      if (par < numero) {
+        parMayor = par;
+
+      }s
+      if ((divisionParOimpar != 0) && (numero >= 0)) {
+        numeroIteracionesImpar++;
         impar = numero;
-        sumaNumeros = impar; 
-        numeroIteracionesImpar = impar ++;
       }
-
     } while (numero >= 0);
-
-    System.out.println();
+    numeroIteraciones--;
+    mediaNumerosImpar = mediaNumerosImpar / numeroIteracionesImpar;
+    System.out.println("Has introducido un total de: " + numeroIteraciones + " números.");
+    System.out.println("La media de los números impares es de: " + mediaNumerosImpar + ".");
+    //System.out.println("El par mayor es: " + parMayor + ".");
   }
 }
