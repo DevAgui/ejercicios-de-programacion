@@ -7,45 +7,56 @@
 public class Ejercicio21Tema05 {
 
   public static void main(String[] args) {
+
+    // Bienvenida al programa.
     System.out.println();
-    long numero = 0;
     System.out.print(
         "Bienvenido. Éste programa te va a pedir números hasta que introduzcas un número negativo. De ellos, te va a decir cuántos has introducido, te va a realizar la media de los impares y te va a dar el mayor de los pares.");
     System.out.println();
-    System.out.println();
+
+    // Inicialización de variables.
+    int numero = 0;
     int numeroIteraciones = 0;
-    long par = 0;
-    long numeroIteracionesImpar = 0;
-    long mediaNumerosImpar = 0;
-    long sumaNumeros = 0;
-    long impar = 0;
-    long parMayor = 0;
+    int par = 0;
+    int numeroIteracionesImpar = 0;
+    double mediaNumerosImpar = 0;
+    int sumaNumeros = 0;
+    int impar = 0;
+    int parMayor = 0;
 
     do {
-      impar = impar;
-      long divisionParOimpar = numero / 2;
-      mediaNumerosImpar = mediaNumerosImpar;
+
       System.out.println("Por favor, introduzca el número");
       numero = Integer.parseInt(System.console().readLine());
-
-      numeroIteraciones++;
-
+      int divisionParOimpar = numero % 2;
+      if ((divisionParOimpar != 0) && (numero >= 0)) {
+        numeroIteracionesImpar++;
+        impar += numero;
+      }
       if (divisionParOimpar == 0) {
         par = numero;
       }
-      if (par < numero) {
+      if (parMayor < par) {
         parMayor = par;
 
-      }s
-      if ((divisionParOimpar != 0) && (numero >= 0)) {
-        numeroIteracionesImpar++;
-        impar = numero;
       }
+      numeroIteraciones++;
     } while (numero >= 0);
     numeroIteraciones--;
-    mediaNumerosImpar = mediaNumerosImpar / numeroIteracionesImpar;
+
+    // Muestra de las operaciones del bucle.
+    System.out.println();
+    mediaNumerosImpar = (double) impar / numeroIteracionesImpar;
     System.out.println("Has introducido un total de: " + numeroIteraciones + " números.");
-    System.out.println("La media de los números impares es de: " + mediaNumerosImpar + ".");
-    //System.out.println("El par mayor es: " + parMayor + ".");
+    if (impar > 0) {
+      System.out.printf("La media de los números impares es de: %2.2f . \n", mediaNumerosImpar);
+    } else {
+      System.out.println("No has introducido números impares.");
+    }
+    if (parMayor > 0) {
+      System.out.println("El par mayor es: " + parMayor + ".");
+    } else {
+      System.out.println("No has introducido ningún número par.");
+    }
   }
 }
