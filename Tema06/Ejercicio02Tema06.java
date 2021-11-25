@@ -24,10 +24,10 @@ public class Ejercicio02Tema06 {
             nombrePalo = "picas";
             break;
         case 2:
-            nombrePalo = "corazones";
+            nombrePalo = "❤️";
             break;
         case 3:
-            nombrePalo = "diamantes";
+            nombrePalo = "♦️";
             break;
         case 4:
             nombrePalo = "tréboles";
@@ -48,7 +48,7 @@ public class Ejercicio02Tema06 {
             nombreCarta = "K";
             break;
         default:
-            nombreCarta = String.valueOf(carta);
+            nombreCarta = "" + carta;
         }
 
         // Salida por pantalla del resultado.
