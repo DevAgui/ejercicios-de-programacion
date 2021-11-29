@@ -23,29 +23,21 @@ public class Ejercicio26Tema05 {
     int posicion = 0;
     int cuentaDigitos = 0;
     int cifra = numeroIntroducido;
-    int resta = 0;
-    int volteado = 0;
+    int division = numeroIntroducido;
+    int guardaNumeros = 0;
 
-    // Cuenta cifras
+    // Cuenta cifras y salida por pantalla
     System.out.println("El dígito que has introducido ocupa el/los lugar/es: ");
-    do {
-      cuentaDigitos++;
-      cifra = volteado / 10;
-      volteado = cifra;
-      volteado = volteado * 10;
-      for (int i = 0; volteado > 10; i++) {
-        volteado = volteado / 10;
+    if (division >= 10) {
+      while (division > 0) {
+        cuentaDigitos++;
+        cifra = division % 10;
+        if (digito == cifra) {
+          posicion = cuentaDigitos;
+          System.out.printf("%d, ", posicion);
+        }
+        division = division / 10;
       }
-      if (volteado == digito) {
-        posicion = cuentaDigitos;
-        System.out.printf("%d, ", posicion);
-      }
-      numeroIntroducido = numeroIntroducido / 10;
-
-    } while (numeroIntroducido >= 1);
-
-    if (posicion == 0) {
-      System.out.println("\nLo siento, no has introducido un dígito que se corresponda con el número.");
     }
   }
 }
