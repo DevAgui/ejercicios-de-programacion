@@ -17,27 +17,26 @@ public class Ejercicio07Tema06 {
     System.out.print("\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━");
     System.out.println("\n┃          PARTIDOS                ┃ORDEN    ┃RESULTADOS┃");
     System.out.print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n");
-    for (int i = 1; i <= 15; i++) {
+    for (int i = 1; i <= 14; i++) {
       int resultadosQuiniela = (int) (Math.random() * 3 + 1);
-      switch(resultadosQuiniela){
+      switch (resultadosQuiniela) {
         case 1:
-        resultado = "1";
-        break;
+          resultado = "1         ";
+          break;
         case 2:
-        resultado = "2";
-        break;
+          resultado = "         2";
+          break;
         case 3:
-        resultado = "x";
-        break;
+          resultado = "     x    ";
+          break;
         default:
       }
       numero++;
-      
-      System.out.printf("┃Equipo 1 - Equipo 2.............. ┃   %2d    ┃     %1s    ┃\n", numero, resultado);
-      
+
+      System.out.printf("┃Equipo 1 - Equipo 2.............. ┃   %2d    ┃%1s┃\n", numero, resultado);
+
     }
     System.out.print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n");
-    // Salida por pantalla
 
   }
 }
