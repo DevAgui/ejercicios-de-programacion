@@ -13,6 +13,8 @@ public class Ejercicio07Tema06 {
     // Declaración de variables.
     int numero = 0;
     String resultado = "";
+    String local = "Local";
+    String visitante = "Visitante";
     // Quiniela.
     System.out.print("\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━");
     System.out.println("\n┃          PARTIDOS                ┃ORDEN    ┃RESULTADOS┃");
@@ -37,6 +39,26 @@ public class Ejercicio07Tema06 {
 
     }
     System.out.print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n");
-
+    System.out.print("    PLENO AL 15: ");
+    for(int j = 1; j < 3; j++){
+      int plenoAlQuince = (int) (Math.random() * 5);
+      local = resultado;
+      switch (plenoAlQuince) {
+        case 1:
+          resultado = "0";
+          break;
+        case 2:
+          resultado = "1";
+          break;
+        case 3:
+          resultado = "2";
+          break;
+        case 4:
+          resultado = "M";
+        default:
+      }
+      visitante = resultado;
+    }
+    System.out.printf("Local....%s   Visitante....%s", local, visitante);
   }
 }
