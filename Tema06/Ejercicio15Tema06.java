@@ -26,8 +26,7 @@ public class Ejercicio15Tema06 {
     String notaEscrita = "";
     int repeticiones = 0;
     String separadorMelodia = "|";
-
-    // Número aleatorio de melodía
+    
 
     // Buclardo que tendré que ponerle un nombre luego.
     for (int i = 0; i <= 9; i++) {
