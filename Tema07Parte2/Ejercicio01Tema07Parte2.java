@@ -4,7 +4,7 @@
  * los elementos del array dispuestos en forma de tabla como se muestra en la
  * figura.
  */
-public class Ejercicio01Tema08 {
+public class Ejercicio01Tema07Parte2 {
 
   public static void main(String[] args) {
 
