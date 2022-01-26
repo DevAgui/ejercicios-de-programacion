@@ -5,7 +5,6 @@ public class FuncionesMatematicas {
      * 1. esCapicua: Devuelve verdadero si el número que se pasa como paráme-
      * tro es capicúa y falso en caso contrario.
      */
-
     public static boolean esCapicua(int numeroIntroducido) {
         int numero = numeroIntroducido;
         int voltear = 0;
@@ -24,35 +23,28 @@ public class FuncionesMatematicas {
         }
     }
 
-    /**
-     * 2. esPrimo: Devuelve verdadero si el número que se pasa como parámetro
-     * es primo y falso en caso contrario.*/
-
-    public static boolean esPrimo(int numeroIntroducido){
-        int comprobacionPrimo = 0;
-        if ((numeroIntroducido == 1) || (numeroIntroducido == 2)) {
-            return true;
-        } else {
-            for (comprobacionPrimo = 2; ((comprobacionPrimo < numeroIntroducido) && ((numeroIntroducido % comprobacionPrimo) != 0)); comprobacionPrimo++){ }
-            
-            if (comprobacionPrimo == numeroIntroducido){
-                return true;
-            } else {
-                return false;
-            }
-        }
+    /*
+    * 2. esPrimo: Devuelve verdadero si el número que se pasa como parámetro
+    * es primo y falso en caso contrario.
+    */
+    public static boolean esPrimo(boolean primo){
+        int numero = numeroIntroducido;
+        
+    for (int i = 2; i < numero; i++) {
+      if ((numero % i) == 0) {
+        primo = false;
+      }
     }
 
-    /** 
+    if (primo) {
+      System.out.println("Tu número es primo.");
+    } else {
+      System.out.println("Tu número no es primo.");
+    }
+    }
+    /**
      * 3. siguientePrimo: Devuelve el menor primo que es mayor al número que
-     * se pasa como parámetro.*/
-
-     public static int siguientePrimo(int numeroIntroducido){
-        while (!esPrimo(++numeroIntroducido)){};
-        return numeroIntroducido;
-    }
-    
-    /**
+     * se pasa como parámetro.
      * 4. potencia: Dada una base y un exponente devuelve la potencia.
      * 5. digitos: Cuenta el número de dígitos de un número entero.
      * 6. voltea: Le da la vuelta a un número.
