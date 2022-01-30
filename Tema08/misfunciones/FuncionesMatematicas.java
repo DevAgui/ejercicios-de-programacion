@@ -54,7 +54,37 @@ public class FuncionesMatematicas {
     
     /**
      * 4. potencia: Dada una base y un exponente devuelve la potencia.
-     * 5. digitos: Cuenta el número de dígitos de un número entero.
+     */
+    public static int potencia(int x , int e){
+        int exponenciacion = 1;
+        for (int reiteracion = 0; reiteracion < e; reiteracion++) {
+            exponenciacion = (x * exponenciacion);
+        }
+        return exponenciacion;
+    }
+
+     /**
+     * 5. digitos: Cuenta el número de dígitos de un número entero.*/
+    public static int digitos(int numeroIntroducido){
+        int digito = 0;
+        int posicion = 1;
+        int division = numeroIntroducido;
+        int cifra = numeroIntroducido;
+        int cuentaDigitos = 0;
+
+        if (division >= 10) {
+            while (division > 0) {
+              cuentaDigitos++;
+              cifra = division % 10;
+              if (digito == cifra) {
+                posicion = cuentaDigitos;
+              }
+              division = division / 10;
+            }
+        }
+        return cuentaDigitos;
+    }
+    /**
      * 6. voltea: Le da la vuelta a un número.
      * 7. digitoN: Devuelve el dígito que está en la posición n de un número entero.
      * Se empieza contando por el 0 y de izquierda a derecha.
