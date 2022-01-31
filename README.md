@@ -9,4 +9,4 @@
 
 _* Actividad:_
 
-Ahora mismo vamos por el Tema 05, y el Tema06 (Bucles y Números aleatorios, respectivamente). Aquí iré subiendo los ejercicios según los haga, puedes mirar y coger lo que quieras.
+Aquí iré subiendo los ejercicios según los haga, puedes mirar y coger lo que quieras.
