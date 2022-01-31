@@ -82,20 +82,33 @@ public class FuncionesMatematicas {
         }
         return cuentaDigitos;
     }
+
     /**
      * 6. voltea: Le da la vuelta a un número.
-     * 7. digitoN: Devuelve el dígito que está en la posición n de un número entero.
-     * Se empieza contando por el 0 y de izquierda a derecha.
-     * 8. posicionDeDigito: Da la posición de la primera ocurrencia de un dígito
-     * dentro de un número entero. Si no se encuentra, devuelve -1.
-     * 9. quitaPorDetras: Le quita a un número n dígitos por detrás (por la
-     * derecha).
-     * 10. quitaPorDelante: Le quita a un número n dígitos por delante (por la
-     * izquierda).
-     * 11. pegaPorDetras: Añade un dígito a un número por detrás.
-     * 12. pegaPorDelante: Añade un dígito a un número por delante.
-     * 13. trozoDeNumero: Toma como parámetros las posiciones inicial y final
-     * dentro de un número y devuelve el trozo correspondiente.
-     **/
+     */
+    public static int volteo(int volteo) {
 
+        int guardadoNumero = volteo;
+        int volteado = 0;
+        while (guardadoNumero > 0) {
+
+            volteado = (volteado * 10) + (guardadoNumero % 10);
+            guardadoNumero /= 10;
+        }
+        return volteado;
+    }
 }
+/**
+ * 7. digitoN: Devuelve el dígito que está en la posición n de un número entero.
+ * Se empieza contando por el 0 y de izquierda a derecha.
+ * 8. posicionDeDigito: Da la posición de la primera ocurrencia de un dígito
+ * dentro de un número entero. Si no se encuentra, devuelve -1.
+ * 9. quitaPorDetras: Le quita a un número n dígitos por detrás (por la
+ * derecha).
+ * 10. quitaPorDelante: Le quita a un número n dígitos por delante (por la
+ * izquierda).
+ * 11. pegaPorDetras: Añade un dígito a un número por detrás.
+ * 12. pegaPorDelante: Añade un dígito a un número por delante.
+ * 13. trozoDeNumero: Toma como parámetros las posiciones inicial y final
+ * dentro de un número y devuelve el trozo correspondiente.
+ **/
