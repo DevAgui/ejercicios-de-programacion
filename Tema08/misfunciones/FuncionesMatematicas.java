@@ -26,16 +26,19 @@ public class FuncionesMatematicas {
 
     /**
      * 2. esPrimo: Devuelve verdadero si el número que se pasa como parámetro
-     * es primo y falso en caso contrario.*/
+     * es primo y falso en caso contrario.
+     */
 
-    public static boolean esPrimo(int numeroIntroducido){
+    public static boolean esPrimo(int numeroIntroducido) {
         int comprobacionPrimo = 0;
         if ((numeroIntroducido == 1) || (numeroIntroducido == 2)) {
             return true;
         } else {
-            for (comprobacionPrimo = 2; ((comprobacionPrimo < numeroIntroducido) && ((numeroIntroducido % comprobacionPrimo) != 0)); comprobacionPrimo++){ }
-            
-            if (comprobacionPrimo == numeroIntroducido){
+            for (comprobacionPrimo = 2; ((comprobacionPrimo < numeroIntroducido)
+                    && ((numeroIntroducido % comprobacionPrimo) != 0)); comprobacionPrimo++) {
+            }
+
+            if (comprobacionPrimo == numeroIntroducido) {
                 return true;
             } else {
                 return false;
@@ -43,19 +46,22 @@ public class FuncionesMatematicas {
         }
     }
 
-    /** 
+    /**
      * 3. siguientePrimo: Devuelve el menor primo que es mayor al número que
-     * se pasa como parámetro.*/
+     * se pasa como parámetro.
+     */
 
-     public static int siguientePrimo(int numeroIntroducido){
-        while (!esPrimo(++numeroIntroducido)){};
+    public static int siguientePrimo(int numeroIntroducido) {
+        while (!esPrimo(++numeroIntroducido)) {
+        }
+        ;
         return numeroIntroducido;
     }
-    
+
     /**
      * 4. potencia: Dada una base y un exponente devuelve la potencia.
      */
-    public static int potencia(int x , int e){
+    public static int potencia(int x, int e) {
         int exponenciacion = 1;
         for (int reiteracion = 0; reiteracion < e; reiteracion++) {
             exponenciacion = (x * exponenciacion);
@@ -63,24 +69,16 @@ public class FuncionesMatematicas {
         return exponenciacion;
     }
 
-     /**
-     * 5. digitos: Cuenta el número de dígitos de un número entero.*/
-    public static int digitos(int numeroIntroducido){
-        int digito = 0;
-        int posicion = 1;
-        int division = numeroIntroducido;
-        int cifra = numeroIntroducido;
+    /**
+     * 5. digitos: Cuenta el número de dígitos de un número entero.
+     */
+    public static int digitos(int digitos) {
+
         int cuentaDigitos = 0;
 
-        if (division >= 10) {
-            while (division > 0) {
-              cuentaDigitos++;
-              cifra = division % 10;
-              if (digito == cifra) {
-                posicion = cuentaDigitos;
-              }
-              division = division / 10;
-            }
+        while (digitos > 0) {
+            digitos = digitos / 10;
+            cuentaDigitos++;
         }
         return cuentaDigitos;
     }

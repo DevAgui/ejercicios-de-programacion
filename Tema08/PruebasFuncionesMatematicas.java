@@ -27,8 +27,11 @@ public class PruebasFuncionesMatematicas {
         int exponente = Integer.parseInt(System.console().readLine()) ;
         System.out.println("El resultado de exponer tu número al exponente es: "+ FuncionesMatematicas.potencia((int) numeroIntroducido, exponente));
   
+    System.out.println("----------------------------------------------------------");
   /*Cuenta el número y te devuelve la posición*/
-  System.out.println("Hay " + FuncionesMatematicas.digitos(numeroIntroducido) + " digitos");
+  System.out.println("Introduce el número el cuál quieras saber los dígitos ");
+  int digitos = Integer.parseInt(System.console().readLine()) ;
+  System.out.println("Hay " + FuncionesMatematicas.digitos(digitos) + " digitos");
   
   }
 }
