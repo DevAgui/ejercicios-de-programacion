@@ -48,5 +48,14 @@ public class PruebasFuncionesMatematicas {
     } else{
       System.out.println("Tu número es: " + volteo);
     }
+
+    System.out.println("----------------------------------------------------------");
+    System.out.println("Introduce un número entero positivo");
+    int n = Integer.parseInt(System.console().readLine());
+    System.out.println("Ahora introduce un dígito que se encuentre en el número que has introducido: ");
+    int digito = Integer.parseInt(System.console().readLine());
+    System.out.println("Tu número es el " + FuncionesMatematicas.digitoN(cuentaDigitos) + " digitos");
+
+
   }
 }
