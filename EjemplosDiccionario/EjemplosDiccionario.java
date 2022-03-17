@@ -24,29 +24,25 @@ public class EjemplosDiccionario{
 
             System.out.println("Introduzca el código de la asignatura: ");
             String codigoIntroducido = s.nextLine().toUpperCase();
-            
-            if((!asignaturas.containsKey(codigoIntroducido))){
 
-                System.out.println("Esta asignatura no existe, ¿desea introducirla?");
-                String respuesta = s.nextLine().toLowerCase();
+                if((!asignaturas.containsKey(codigoIntroducido))){
 
-                if(respuesta.equals("si")){
+                    System.out.println("Esta asignatura no existe, ¿desea introducirla?");
+                    String respuesta = s.nextLine().toLowerCase();
 
-                    System.out.println("Introduce el nombre de la asignatura: ");
-                    String nombre = s.nextLine();
+                    if(respuesta.equals("si")){
 
-                    asignaturas.put(codigoIntroducido, nombre);
+                        System.out.println("Introduce el nombre de la asignatura: ");
+                        String nombre = s.nextLine();
 
-                    
-                    vacio = false;
+                        asignaturas.put(codigoIntroducido, nombre);
+
+                    }
 
                 }
-
-            } else{
-                System.out.println("El código de la nueva asignatura es: " + asignaturas.get(codigoIntroducido));
-            }
-            
-        }while(vacio);
+                    System.out.println("El código de la nueva asignatura es: " + asignaturas.get(codigoIntroducido));
+                    vacio = false;
+            }while(vacio);
 
     
     }
