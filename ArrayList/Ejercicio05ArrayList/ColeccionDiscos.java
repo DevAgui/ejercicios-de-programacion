@@ -28,6 +28,7 @@ public class ColeccionDiscos {
         String tituloIntroducido;
         String generoIntroducido;
         int duracionIntroducida;
+        String duracionIntroducidaToString;
         String codigoIntroducido;
 
         Scanner s = new Scanner(System.in);
@@ -155,34 +156,119 @@ public class ColeccionDiscos {
 
                 codigoIntroducido = s.nextLine();
 
-                while(album.contains( new Disco(codigoIntroducido, "", "", "", 0))){// Comprueba que no haya un Disco que ya exista con el código introducido
+               // Comprueba que no haya un Disco que ya exista con el código introducido
 
-                    System.out.println("Ese Disco ya existe.");
 
-                    System.out.println("Introduce otro código: ");
+                while(album.contains(new Disco(codigoIntroducido,"","","",0))){
 
-                    codigoIntroducido = s.nextLine();
+                        System.out.println("Ese Disco ya existe.");
 
-                }
+                        System.out.println("Introduce otro código: ");
 
-                System.out.println("Introduce el autor: ");
-                autorIntroducido = s.nextLine();
+                        codigoIntroducido = s.nextLine();
 
-                System.out.println("Introduce el título: ");
-                tituloIntroducido = s.nextLine();
+                    } 
 
-                System.out.println("Introduce el género: ");
-                generoIntroducido = s.nextLine();
+            
+                        System.out.println("Introduce el autor: ");
+                        autorIntroducido = s.nextLine();
 
-                System.out.println("Introduce la duración: ");
-                duracionIntroducida = Integer.parseInt(s.nextLine());
+                        System.out.println("Introduce el título: ");
+                        tituloIntroducido = s.nextLine();
+
+                        System.out.println("Introduce el género: ");
+                        generoIntroducido = s.nextLine();
+
+                        System.out.println("Introduce la duración: ");
+                        duracionIntroducida = (s.nextInt());
+
+                        album.add(new Disco(codigoIntroducido, autorIntroducido, tituloIntroducido, generoIntroducido, duracionIntroducida));
+                    
+                
+                
+                
+
+                
 
                 // Recoge todos los datos previamente introducidos y los mete en el ArrayList de Discos
 
-                album.add(new Disco(codigoIntroducido, autorIntroducido, tituloIntroducido, generoIntroducido, duracionIntroducida));
+                
+
+                break;
+
+                // Modificar
+                case 3:
+
+                System.out.println("---MODIFICAR---");
+
+                System.out.println("Por favor, introduzca el código del ");
+                System.out.print("disco que desea modificar: ");
+                codigoIntroducido = s.nextLine();
+
+                /*while(!album.contains(new Disco(codigoIntroducido,"","","",0))){
+
+                    System.out.println("Ése disco no existe, introduzca otro: ");
+                    codigoIntroducido = s.nextLine();
+                }*/
+
+                // Creamos un índice para poder extraer el código del mismo y realizar comparativas
+                i = album.indexOf(new Disco(codigoIntroducido,"","","",0));
+
+                // Nuevo Código
+                System.out.println("Introduce los cambios que desees: ");
+
+                System.out.println("Nuevo código del disco: ");
+                codigoIntroducido = s.nextLine();
+
+                if(!codigoIntroducido.equals("")){
+
+                    album.get(i).setCodigo(codigoIntroducido);
+    
+                }
+
+                // Nuevo Autor
+                System.out.println("Nuevo Autor del disco: ");
+                autorIntroducido = s.nextLine();
+
+                if(!autorIntroducido.equals("")){
+
+                    album.get(i).setAutor(autorIntroducido);
+    
+                }
+
+                // Nuevo Título
+                System.out.println("Nuevo Título del disco: ");
+                tituloIntroducido = s.nextLine();
+
+                if(!tituloIntroducido.equals("")){
+
+                    album.get(i).setAutor(tituloIntroducido);
+    
+                }
+
+                // Nuevo Género
+                System.out.println("Nuevo Género del disco: ");
+                generoIntroducido = s.nextLine();
+
+                if(!generoIntroducido.equals("")){
+
+                    album.get(i).setGenero(generoIntroducido);
+    
+                }
+
+                // Nueva Duración
+                System.out.println("Nueva Duración del disco: ");
+                duracionIntroducidaToString = s.nextLine();
+
+                if(!duracionIntroducidaToString.equals("")){
+
+                    album.get(i).setDuracion(Integer.parseInt(duracionIntroducidaToString));
+    
+                }
 
                 break;
             }
+
         }while(opcion != 5);
     }
 }

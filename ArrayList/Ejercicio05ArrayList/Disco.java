@@ -20,12 +20,26 @@ public class Disco {
 
     private int duracion;
 
+    // Constructor
+    public Disco(String codigo, String autor, String titulo, String genero, int duracion) {
+        this.codigo = codigo;
+        this.autor = autor;
+        this.titulo = titulo;
+        this.genero = genero;
+        this.duracion = duracion;
+    }
 
+    // Seters y Geters
 
     public String getCodigo(){
 
         return codigo;
 
+    }
+
+    public void setCodigo(String codigo){
+        
+        this.codigo = codigo;
     }
 
     public String getAutor(){
@@ -76,6 +90,8 @@ public class Disco {
 
     }
 
+    // Conversión a String de los métodos Set y Get de la clase Disco
+
     public String toString(){
 
         String cadena = "\n----------------------------------";
@@ -84,7 +100,9 @@ public class Disco {
         cadena += "\nTítulo: " + this.titulo;
         cadena += "\nGénero: " + this.genero;
         cadena += "\nDuración: " + this.duracion;
-        cadena = "\n----------------------------------";
+        cadena += "\n----------------------------------";
         return cadena;
+
     }
+
 }
