@@ -18,17 +18,20 @@ public class ArrayListCarta{
         
         String [] palos = {"Bastos","Copas","Espadas","Oros"};
 
-        int seleccionAleatoria = (int)(Math.random() * 10);
+        int r = (int)(Math.random() * 10);
 
+        // Doble foreach para recorrer los dos valores del array, rellenándose entero
+
+            for (String figura : figuras) {
+
+                for(String palo : palos){
+
+                barajaEspanola.add(new Carta(figura,palo));
+                System.out.println(barajaEspanola);
+
+                }
+            } 
+        }
         
-        for (String figura: figuras) {
 
-            barajaEspanola.add(new Carta(figura, palos));
-
-        } 
-    
-
-
-
-    }
 }

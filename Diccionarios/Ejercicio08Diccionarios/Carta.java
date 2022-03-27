@@ -13,12 +13,14 @@ public class Carta{
         this.palo = palo;
     }
 
+
     // Métodos de la clase constructor
     public void setNumero(String numero){
 
         this.numero = numero;
 
     }
+
 
     public String getNumero(){
 
@@ -39,11 +41,11 @@ public class Carta{
     }
 
     // Conversión a cadena de texto
-
     public String toString(){
 
         String cadena = "\nNúmero: " + this.numero;
         cadena += "\nPalo: " + this.palo;
         return cadena;
+        
     }
 }
