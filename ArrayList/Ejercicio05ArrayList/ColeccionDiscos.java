@@ -308,8 +308,10 @@ public class ColeccionDiscos {
                 } else{
 
                     // .remove elimina los datos que contenga el método Set.
+                    // el método indexOf() utiliza el método .equals para comparar los valores de indexOf y de codigoIntroducido
                     album.remove(album.indexOf(new Disco(codigoIntroducido,"","","",0)));
                     System.out.println("Ha eliminado con éxito el disco");
+                    
                 }
                 
                 break;

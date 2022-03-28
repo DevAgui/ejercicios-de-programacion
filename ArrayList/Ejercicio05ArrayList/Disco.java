@@ -99,6 +99,7 @@ public class Disco {
         return result;
     }
 
+    // Viene definido por defecto, así que hay que sobrescribirlo
     @Override
     public boolean equals(Object obj) {
         if (this == obj)
